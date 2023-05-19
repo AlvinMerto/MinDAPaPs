@@ -1,0 +1,640 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+
+    font-family: 'Carlito', sans-serif;
+}
+
+body {
+	background:url("/minda_images/another_design.png");
+	background-repeat:no-repeat;
+	padding: 60px 115px;
+	overflow: hidden;
+	background-size: contain;
+}
+
+.inner-div {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+	box-shadow: 0px 0px 40px #15151585;
+}
+
+.navigation-div {
+	background: #eff2ff;
+	border-radius: 50px 0px 0px 50px;
+	width: 22%;
+}
+
+.flex-it {
+  	display:flex;
+    height: 100%;
+}
+
+.navigation-div h4 {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.navigation-div ul {
+	padding: 0px;
+}
+
+.navigation-div ul li{
+font-size: 20px;
+padding: 20px 27px;
+color: #717373;
+list-style: none;
+text-align: right;
+position: relative;
+border-bottom: 1px solid #e2e2e2;
+}
+
+.navigation-div ul li:hover {
+	font-weight: bold;
+	color:#333;
+}
+
+.navigation-div ul li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.theright-panel {
+	width:78%;
+	border-radius: 0px 50px 50px 0px;
+}
+
+.theright-panel h2 {
+	padding: 15px 0px;
+border-bottom: 1px solid #e2e2e2;
+margin: 0px;
+font-size: 21px;
+color: #565858;
+}
+
+.thedisplay-div {
+	width: 60%;
+	padding: 0px 25px;
+}
+
+.fulldiv {
+	width: 55%;
+}
+
+
+
+.theminda-div {
+width: 40%;
+padding: 0px 18px;
+border-left: 1px solid #e2e2e2;
+}
+
+.logo-div {
+	width: 100%;
+}
+
+.logo-div img {
+	width: inherit;
+}
+
+.description table {
+	width: 100%;
+/*	margin-top: 50px;*/
+	border-collapse: collapse;
+}
+
+.description table tr{
+	
+}
+
+
+
+.description table tbody tr:nth-child(2n+1) {
+	background: #f6f6f6;
+}
+
+.description table tr td {
+	border: 1px solid #ccc;
+  	padding: 10px;
+  	text-align:center;
+}
+
+.description table tr td:first-child{
+	
+}
+
+.description table tr td:last-child{
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+.selected {
+	background: #317a8d;
+	color: #fff !important;
+}
+
+.selected:after {
+content: '';
+display: block;
+border-left: 5px solid #317a8d;
+border-top: 5px solid #317a8d;
+width: 25px;
+height: 25px;
+float: right;
+transform: translate(0%, 0%) rotate(136deg);
+position: absolute;
+right: -14px;
+top: 18px;
+background: #317a8d;
+}
+
+.nav-li {
+	display: flex;
+	justify-content: start;
+	border-bottom: 1px solid #ccc;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+.nav-li li{
+list-style: none;
+margin-right: 20px;
+padding-right: 20px;
+font-size: 17px;
+padding: 9px 0px;
+}
+
+.nav-li-li {
+	padding-left: 20px;
+}
+
+.nav-li-li li{
+list-style: none;
+margin-right: 20px;
+font-size: 15px;
+padding: 19px 0px;
+border-bottom: 1px solid #dadada;
+}
+
+.nav-li-li li:hover {
+	color:#333;
+}
+
+.nav-li li p {
+	margin:0px;
+	font-size: 21px;
+}
+
+.nav-li li:hover > ul {
+	display: block;
+}
+
+.nav-li li ul {
+	display: none;
+	position: absolute;
+	background: #fff;
+	box-shadow: 0px 0px 12px #ccc;
+	z-index: 1000000;
+}
+
+.nav-li li ul li {
+	font-weight: normal;
+}
+
+.nav-li li ul li:hover {
+	font-weight: bold;
+}
+
+.nav-li li a {
+	text-decoration: none;
+	color:#333;
+}
+
+.nav-li li:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#chart {
+	margin-top: 10%;
+}
+
+.selectedli {
+	font-weight: bold;
+	color: #4192a6;
+}
+
+.selectedrow, .selectedtd {
+	background: #96eee5 !important;
+}
+
+.description_tbl {
+	margin-top: 0px !important;
+}
+
+.desc_div {
+	height:75%;
+	overflow: auto;
+}
+
+.thesearchtxts {
+	padding: 12px;
+	width: 100%;
+	font-size: 13px;
+}
+
+.thesearchbtn {
+	padding: 9px;
+	margin: 8px 0px;
+	float: right;
+}
+
+#thelistsofresults{
+
+}
+
+#thelistsofresults li{
+	list-style: numeric;
+	padding: 5px 0px;
+}
+
+.textareastyle {
+	min-width: 500px;
+	min-height: 200px;
+}
+
+.theinputs{
+	border-top:1px solid #ccc;
+	margin-top:20px;
+	padding-top: 20px;
+}
+
+.theinputs input[type='text'], textarea, button{
+	padding:20px;
+	width:400px;
+}
+
+.theinputs textarea {
+	min-height: 200px;
+}
+
+.center-it {
+	text-align: center;
+}
+
+.bold-it {
+	font-weight: bold;
+}
+
+.details-div {
+	position: absolute;
+	background: #fff;
+	width: 303px;
+	top: 202px;
+	padding: 10px 15px;
+	box-shadow: 0px 0px 30px #818181;
+	margin-left: -45px;
+	border-radius: 15px;
+	z-index: 10000000;
+	display: none;
+	transition: all 1s;
+	border: 1px solid #a19a9a;
+}
+
+.details-div-others {
+position: absolute;
+background: #fff;
+width: fit-content;
+top: 105px;
+padding: 10px 15px;
+box-shadow: 0px 0px 30px #818181;
+margin-left: -70px;
+border-radius: 15px;
+z-index: 10000000;
+display: none;
+transition: all 1s;
+border: 1px solid #a19a9a;
+}
+
+.details-div:before {
+	content: '';
+	display: block;
+	border-left: 5px solid #fff;
+	border-top: 5px solid #fff;
+	width: 25px;
+	height: 25px;
+	float: right;
+	transform: translate(0%, 0%) rotate(136deg);
+	position: absolute;
+	top: -10px;
+	background: #fff;
+	right: 138px;
+}
+
+.details-div p {
+	font-size: 19px;
+}
+
+.details-div p a {
+	text-decoration: none;
+	color:#333;
+	font-weight: bold;
+}
+
+.details-div p a:hover {
+	color: blue;
+}
+
+.others-circles-it {
+/*	width: 6250px;*/
+	text-align: center;
+}
+
+.others-circles-it li{
+width: 120px;
+height: 120px;
+border-radius: 99px;
+background-color: #fff;
+list-style: none;
+display: inline-block;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+border: 1px solid #eaeaea;
+box-shadow: 0px 0px 10px #55555594;
+margin: 5px 10px;
+position: relative;
+transition: all .5s;
+}
+
+.others-circles-it li:hover {
+	box-shadow: 0px 0px 20px #000;
+}
+
+.circles-it {
+	text-align: center;
+}
+
+.circles-it li{
+	list-style: none;
+	display: inline-block;
+	width: 222px;
+	height: 222px;
+	border-radius: 19px;
+	background-color: #e9e9e905;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 15px;
+	background-size: contain;
+	border: 1px solid #aaa;
+	box-shadow: 0px 0px 25px #0101015c;
+	position: relative;
+}
+
+.label {
+	text-align: left !important;
+font-size: 15px !important;
+font-weight: bold;
+border-bottom: 1px solid #d9d9d9;
+border-top: 1px solid #d9d9d9;
+background: #f1f1f1;
+}
+
+.circles-it li:hover > .details-div {
+	display: block;
+}
+
+.others-circles-it li:hover > .details-div-others {
+	display: block;
+}
+
+.adb_logo {
+	background-image: url("/minda_images/logos/adb.png") !important;
+}
+
+.aus_logo {
+	background-image: url("/minda_images/logos/aus.png") !important;
+}
+
+.eu_logo {
+	background-image: url("/minda_images/logos/eu.png") !important;
+}
+
+.fao_logo {
+	background-image: url("/minda_images/logos/fao.png") !important;
+}
+
+.giz_logo {
+	background-image: url("/minda_images/logos/giz.png") !important;
+}
+
+.jica_logo {
+	background-image: url("/minda_images/logos/jica.png") !important;
+}
+
+.koica_logo {
+	background-image: url("/minda_images/logos/koica.png") !important;
+}
+
+.nzaid_logo {
+	background-image: url("/minda_images/logos/nzaid.png") !important;
+}
+
+.undp_logo {
+	background-image: url("/minda_images/logos/undp.png") !important;
+}
+
+.usaid_logo {
+	background-image: url("/minda_images/logos/usaid.png") !important;
+}
+
+.wb_logo {
+	background-image: url("/minda_images/logos/wb.png") !important;
+}
+
+/*other logos*/
+.aecid_logo {
+	background-image: url("/minda_images/logos/others/aecid.png") !important;
+}
+
+.afd_logo {
+	background-image: url("/minda_images/logos/others/afd.png") !important;
+}
+
+.aiib_logo {
+	background-image: url("/minda_images/logos/others/aiib.png") !important;
+}
+
+.australianembassy_logo {
+	background-image: url("/minda_images/logos/others/australianembassy.png") !important;
+}
+
+.austriandevelopmentagency_logo {
+	background-image: url("/minda_images/logos/others/austriandevelopmentagency.png") !important;
+}
+
+.austrianembassy_logo {
+	background-image: url("/minda_images/logos/others/austrianembassy.png") !important;
+}
+
+.belgiumphilippines_logo {
+	background-image: url("/minda_images/logos/others/belgiumphilippines.png") !important;
+}
+
+.chechrepublic_logo {
+	background-image: url("/minda_images/logos/others/chechrepublic.png") !important;
+}
+
+.china_logo {
+	background-image: url("/minda_images/logos/others/china.png") !important;
+}
+
+.denmark_logo {
+	background-image: url("/minda_images/logos/others/denmark.png") !important;
+}
+
+.edcfkorea_logo {
+	background-image: url("/minda_images/logos/others/edcfkorea.png") !important;
+}
+
+.embassyofhungary_logo {
+	background-image: url("/minda_images/logos/others/embassyofhungary.png") !important;
+}
+
+.embassyofisrael_logo {
+	background-image: url("/minda_images/logos/others/embassyofisrael.png") !important;
+}
+
+.embassyofitaly_logo {
+	background-image: url("/minda_images/logos/others/embassyofitaly.png") !important;
+}
+
+.europeaninvestmentbank_logo {
+	background-image: url("/minda_images/logos/others/europeaninvestmentbank.png") !important;
+}
+
+.federalministryforeconomiccooperationanddevelopment_logo {
+	background-image: url("/minda_images/logos/others/federalministryforeconomiccooperationanddevelopment.png") !important;
+}
+
+.finland_logo {
+	background-image: url("/minda_images/logos/others/finland.png") !important;
+}
+
+.frenchembassy_logo {
+	background-image: url("/minda_images/logos/others/frenchembassy.png") !important;
+}
+
+.germany_logo {
+	background-image: url("/minda_images/logos/others/germany.png") !important;
+}
+
+.iaea_logo {
+	background-image: url("/minda_images/logos/others/iaea.png") !important;
+}
+
+.govtofcanada_logo {
+	background-image: url("/minda_images/logos/others/govtofcanada.png") !important;
+}
+
+.ifad_logo {
+	background-image: url("/minda_images/logos/others/ifad.png") !important;
+}
+
+.internationlabourorganization_logo {
+	background-image: url("/minda_images/logos/others/internationlabourorganization.png") !important;
+}
+
+.japan_logo {
+	background-image: url("/minda_images/logos/others/japan.png") !important;
+}
+
+.kfw_logo {
+	background-image: url("/minda_images/logos/others/kfw.png") !important;
+}
+
+.kingdomofnetherlands_logo {
+	background-image: url("/minda_images/logos/others/kingdomofnetherlands.png") !important;
+}
+
+.korea_logo {
+	background-image: url("/minda_images/logos/others/korea.png") !important;
+}
+
+.nordicinvestmentbank_logo {
+	background-image: url("/minda_images/logos/others/nordicinvestmentbank.png") !important;
+}
+
+.norway_logo {
+	background-image: url("/minda_images/logos/others/norway.png") !important;
+}
+
+.opec_logo {
+	background-image: url("/minda_images/logos/others/opec.png") !important;
+}
+
+.poland_logo {
+	background-image: url("/minda_images/logos/others/poland.png") !important;
+}
+
+.saudiarabia_logo {
+	background-image: url("/minda_images/logos/others/saudiarabia.png") !important;
+}
+
+.saudifundfordevelopment_logo {
+	background-image: url("/minda_images/logos/others/saudifundfordevelopment.png") !important;
+}
+
+.sida_logo {
+	background-image: url("/minda_images/logos/others/sida.png") !important;
+}
+
+.spain_logo {
+	background-image: url("/minda_images/logos/others/spain.png") !important;
+}
+
+.switzerland_logo {
+	background-image: url("/minda_images/logos/others/switzerland.png") !important;
+}
+
+.UK_logo {
+	background-image: url("/minda_images/logos/others/UK.png") !important;
+}
+
+.UN_logo {
+	background-image: url("/minda_images/logos/others/UN.png") !important;
+}
+
+.unfpa_logo {
+	background-image: url("/minda_images/logos/others/unfpa.png") !important;
+}
+
+.unido_logo {
+	background-image: url("/minda_images/logos/others/unido.png") !important;
+}
+
+.unops_logo {
+	background-image: url("/minda_images/logos/others/unops.png") !important;
+}
+
+.unicef_logo {
+	background-image: url("/minda_images/logos/others/unicef.png") !important;
+}
+
+.USembassy_logo {
+	background-image: url("/minda_images/logos/others/USembassy.png") !important;
+}
+
+.who_logo {
+	background-image: url("/minda_images/logos/others/who.png") !important;
+}
+
+.wfp_logo {
+	background-image: url("/minda_images/logos/others/wfp.png") !important;
+}
+
+/*end other logos*/
